@@ -6,6 +6,7 @@ public class MaxNumberFinder {
         int a = scanner.nextInt();
         int b = scanner.nextInt();
         int c = scanner.nextInt();
+        System.out.println("Ввод завершён");
         int max = findMax(a, b, c);
         System.out.println("Максимум: " + max);
     }
