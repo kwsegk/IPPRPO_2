@@ -16,8 +16,6 @@ public class MaxNumberFinder {
         }
     }
     public static int findMax(int a, int b, int c) {
-        if (a >= b && a >= c) return a;
-        if (b >= a && b >= c) return b;
-        return c;
+        return Math.max(a, Math.max(b, c)); // Более надёжный способ
     }
 }
