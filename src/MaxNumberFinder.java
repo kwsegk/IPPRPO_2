@@ -7,6 +7,7 @@ public class MaxNumberFinder {
         int a = scanner.nextInt();
         int b = scanner.nextInt();
         int c = scanner.nextInt();
+        System.out.println("Проверка равенства");
         int max = findMax(a, b, c);
         if (a == b && b == c) {
             System.out.println("Все числа равны: " + a);
