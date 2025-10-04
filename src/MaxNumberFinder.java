@@ -19,3 +19,5 @@ public class MaxNumberFinder {
         return Math.max(a, Math.max(b, c)); // Более надёжный способ
     }
 }
+
+//Немного другой коментаааарий
