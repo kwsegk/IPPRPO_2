@@ -1,9 +1,14 @@
+import java.util.Scanner;
 public class MaxNumberFinder {
     public static void main(String[] args) {
-        System.out.println("Программа для поиска максимума из трёх чисел");
-        int a = 5, b = 3, c = 7;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите три числа:");
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int c = scanner.nextInt();
+        System.out.println("Ввод завершён");
         int max = findMax(a, b, c);
-        System.out.println("Максимум из чисел: " + max);
+        System.out.println("Максимум: " + max);
     }
     public static int findMax(int a, int b, int c) {
         if (a >= b && a >= c) return a;
