@@ -1,6 +1,13 @@
 public class MaxNumberFinder {
     public static void main(String[] args) {
         System.out.println("Программа для поиска максимума из трёх чисел");
-        System.out.println("Наибольшее число: ");
+        int a = 5, b = 3, c = 7;
+        int max = findMax(a, b, c);
+        System.out.println("Максимум из чисел: " + max);
+    }
+    public static int findMax(int a, int b, int c) {
+        if (a >= b && a >= c) return a;
+        if (b >= a && b >= c) return b;
+        return c;
     }
 }
