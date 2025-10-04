@@ -14,6 +14,7 @@ public class MaxNumberFinder {
         } else {
             System.out.println("Максимум: " + max);
         }
+        System.out.println("Изменяю код, но не коммичу");
     }
     public static int findMax(int a, int b, int c) {
         if (a >= b && a >= c) return a;
