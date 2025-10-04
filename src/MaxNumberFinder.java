@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class MaxNumberFinder {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -6,9 +7,13 @@ public class MaxNumberFinder {
         int a = scanner.nextInt();
         int b = scanner.nextInt();
         int c = scanner.nextInt();
-        System.out.println("Ввод завершён");
+        System.out.println("Проверка равенства");
         int max = findMax(a, b, c);
-        System.out.println("Максимум: " + max);
+        if (a == b && b == c) {
+            System.out.println("Все числа равны: " + a);
+        } else {
+            System.out.println("Максимум: " + max);
+        }
     }
     public static int findMax(int a, int b, int c) {
         if (a >= b && a >= c) return a;
